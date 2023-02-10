@@ -31,3 +31,38 @@ PS C:\Users\AlecMcCutcheon\Desktop> (Get-CUOneDriveStatus).StatusString
 Up to date
 Up to date
 ```
+
+# Syntax:
+
+"Get-CUOneDriveStatus" is basicly just a compatibility wrapper for "Get-ODStatus", so all of the same parameters for the original can be used as you would expect.
+
+```
+Get-CUOneDriveStatus [-Type <type-Name>] [-ByPath <path>] [CLSID <guid>]
+             [-IncludeLog] [-Verbose]
+
+Or
+Get-CUOneDriveStatus -OnDemandOnly [-Type <type-Name>] [-IncludeLog] [-Verbose]
+```
+# Where:
+```
+-Type <type>       Only returns if Service Type matches <type>
+                   Example: Get-CUOneDriveStatus -Type Personal
+
+-ByPath <path>     Only checks a particular folder or file status
+                   Example: Get-CUOneDriveStatus -Path "$env:OneDrive\docs"
+
+-CLSD <guid>       Verify only a particular GUID (not used normally)
+                   Example: Get-CUOneDriveStatus -CLSD A0396A93-DC06-4AEF-BEE9-95FFCCAEF20E
+
+-IncludeLog        If present will save a log file on the temp folder
+
+-Verbose           Show verbose information
+
+-OnDemandOnly      Normally On Demand is only tested as a fallback, when
+                   -OnDemandOnly is present it goes directly to 
+                   On Demand status. This may resolve flicker issues
+```
+# Alias:
+```
+Get-CUODStatus
+```
