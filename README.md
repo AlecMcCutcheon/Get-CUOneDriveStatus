@@ -39,6 +39,9 @@ azuread\alecmccutcheon
 PS C:\Users\AlecMcCutcheon\Desktop> (Get-CUOneDriveStatus).StatusString;
 Up to date
 Up to date
+
+PS C:\Users\AlecMcCutcheon\Desktop> (Get-CUOneDriveStatus -Type Business).UserName
+AzureAD\AlecMcCutcheon
 ```
 
 # Syntax:
