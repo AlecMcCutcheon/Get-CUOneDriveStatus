@@ -1,5 +1,5 @@
 # Get-CUOneDriveStatus
-A function that grabs the latest version of Rodneyviana's "[Get-ODStatus](https://github.com/rodneyviana/ODSyncService)" function and uses My "[PSRunAsCurrentUser](https://github.com/AlecMcCutcheon/PSRunAsCurrentUser)" function there's a compatibility layer of sorts. Which allows it to work as the (User, Admin or even System) account. Note: If you are running it as Administrator or System, keep in mind that a user must be logged into the machine in order for this to work.
+A function that grabs the latest version of Rodneyviana's "[Get-ODStatus](https://github.com/rodneyviana/ODSyncService)" function and uses My "[PSRunAsCurrentUser](https://github.com/AlecMcCutcheon/PSRunAsCurrentUser)" function as a compatibility layer of sorts. Which allows it to work as the (User, Admin or even System) account. Note: If you are running it as Administrator or System, keep in mind that a user must be logged into the machine in order for this to work.
 
 Use the following One-liner to Temp Run in session: 
 
