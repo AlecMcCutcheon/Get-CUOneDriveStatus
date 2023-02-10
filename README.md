@@ -22,9 +22,6 @@ nt authority\system
 PS C:\WINDOWS\system32> (Get-CUOneDriveStatus).StatusString;
 Up to date
 Up to date
-```
-```
-PS C:\WINDOWS\system32> iex ((New-Object System.Net.WebClient).DownloadString("https://tinyurl.com/Get-CUOneDriveStatus"));
 
 PS C:\WINDOWS\system32> (Get-CUOneDriveStatus -Type Business).UserName
 AzureAD\AlecMcCutcheon
