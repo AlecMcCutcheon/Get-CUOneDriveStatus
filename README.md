@@ -50,10 +50,10 @@ AzureAD\AlecMcCutcheon
 
 ```
 Get-CUOneDriveStatus [-Type <type-Name>] [-ByPath <path>] [CLSID <guid>]
-             [-IncludeLog] [-Verbose]
+             [-IncludeLog] [-Verbose] [-ForceFallback]
 
 Or
-Get-CUOneDriveStatus -OnDemandOnly [-Type <type-Name>] [-IncludeLog] [-Verbose]
+Get-CUOneDriveStatus -OnDemandOnly [-Type <type-Name>] [-IncludeLog] [-Verbose] [-ForceFallback]
 ```
 # Where:
 ```
