@@ -4,14 +4,14 @@ A function that grabs the latest version of Rodneyviana's "[Get-ODStatus](https:
 Use the following One-liner to Import the function into the current session: 
 
 ```
-iex ((New-Object System.Net.WebClient).DownloadString("https://tinyurl.com/Get-CUOneDriveStatus"));
+iex ((New-Object System.Net.WebClient).DownloadString("https://rawcdn.githack.com/AlecMcCutcheon/Get-CUOneDriveStatus/c42ceac076c99c212fc394f841b34e7e1a7c9e67/Get-CUOneDriveStatus.ps1"));
 ```
 
 # Usage:
 
 As System:
 ```
-PS C:\WINDOWS\system32> iex ((New-Object System.Net.WebClient).DownloadString("https://tinyurl.com/Get-CUOneDriveStatus"));
+PS C:\WINDOWS\system32> iex ((New-Object System.Net.WebClient).DownloadString("https://rawcdn.githack.com/AlecMcCutcheon/Get-CUOneDriveStatus/c42ceac076c99c212fc394f841b34e7e1a7c9e67/Get-CUOneDriveStatus.ps1"));
 
 PS C:\WINDOWS\system32> (New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator);
 True
@@ -28,7 +28,7 @@ AzureAD\AlecMcCutcheon
 ```
 As User:
 ```
-PS C:\Users\AlecMcCutcheon\Desktop> iex ((New-Object System.Net.WebClient).DownloadString("https://tinyurl.com/Get-CUOneDriveStatus"));
+PS C:\Users\AlecMcCutcheon\Desktop> iex ((New-Object System.Net.WebClient).DownloadString("https://rawcdn.githack.com/AlecMcCutcheon/Get-CUOneDriveStatus/c42ceac076c99c212fc394f841b34e7e1a7c9e67/Get-CUOneDriveStatus.ps1"));
 
 PS C:\Users\AlecMcCutcheon\Desktop> (New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator);
 False
