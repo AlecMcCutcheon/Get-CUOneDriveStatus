@@ -73,6 +73,8 @@ Get-CUOneDriveStatus -OnDemandOnly [-Type <type-Name>] [-IncludeLog] [-Verbose]
 -OnDemandOnly      Normally On Demand is only tested as a fallback, when
                    -OnDemandOnly is present it goes directly to 
                    On Demand status. This may resolve flicker issues
+
+-ForceFallback     Parameter from the "PSRunAsCurrentUser" function. See https://github.com/AlecMcCutcheon/PSRunAsCurrentUser for info
 ```
 # Alias:
 ```
