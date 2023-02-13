@@ -29,7 +29,7 @@ Function Get-CUOneDriveStatus {
   if ($PSCmdlet.MyInvocation.BoundParameters["Verbose"].IsPresent) {$Command += " -Verbose";};
 
   if (((New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))) {
-    iex ((New-Object System.Net.WebClient).DownloadString("https://tinyurl.com/PSRunAsCurrentUser"));
+    iex ((New-Object System.Net.WebClient).DownloadString("https://rawcdn.githack.com/AlecMcCutcheon/PSRunAsCurrentUser/b419b135641597982a2a4fa38e27502cde172584/PSRunAsCurrentUser.ps1"));
     $OneDriveSync = [scriptblock]::Create('Import-Module ([System.Reflection.Assembly]::Load((Invoke-WebRequest -UseBasicParsing -Uri "https://github.com/rodneyviana/ODSyncService/releases/latest/download/OneDriveLib.dll").content)) -ErrorAction SilentlyContinue > $null;' + " $Command|ConvertTo-Json;")
     $Result = (PSRunAsCurrentUser -ScriptBlock $OneDriveSync | ConvertFrom-Json).Value
   }else{
